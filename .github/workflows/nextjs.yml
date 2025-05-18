@@ -25,7 +25,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22.15.1"
-          # no cache here due to subfolder project structure
 
       - name: Cache node_modules and .next cache
         uses: actions/cache@v4
@@ -45,14 +44,10 @@ jobs:
         working-directory: first-app
         run: npm run build
 
-      - name: Export static HTML (optional, if using next export)
-        working-directory: first-app
-        run: npm run export
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: first-app/out
+          path: first-app/.next
 
   deploy:
     runs-on: ubuntu-latest

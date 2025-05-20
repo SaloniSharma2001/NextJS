@@ -1,5 +1,6 @@
 # NextJS
-Key Features and benefits:
+**Key Features and benefits:**
+
 Fullstack app unlike Single Page Application. That means, frontend and backend in the same project.
 File-based-routing: Routing are configured via the filesystem (folders + files) no package or routing.
 This is the folder NextJs would scan to find any routing path
@@ -22,7 +23,7 @@ Following which you can answer all the question based on which your project setu
 **We have two approaches for building NextJS Apps**
 _Pages Router_ : Mostly similar to react and is widely in use.
 
- or_ App Router_: Introduce with nextJS 13 and supports server component and react server engine.
+ or _App Router_ : Introduce with nextJS 13 and supports server component and react server engine.
 We shall look into that later.
 
 Move to the project folder by using command 
